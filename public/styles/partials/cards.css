@@ -7,6 +7,11 @@
   padding: 1.5rem;
 
   text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .badge {
@@ -19,14 +24,16 @@
   padding: 0.5rem 1.5rem;
 
   font-weight: 500;
-  font-size: 0.875rem; /* 14px of 16px root*/
-  line-height: 1.625rem; /* 26px of 16px root*/
+  font-size: 0.875rem;
+  /* 14px of 16px root*/
+  line-height: 1.625rem;
+  /* 26px of 16px root*/
 
   background-color: rgb(237, 237, 237);
-  
+
 }
 
-.progress .badge{
+.progress .badge {
   background: var(--color-badge-progress-background);
   color: var(--color-badge-progress-text);
 }

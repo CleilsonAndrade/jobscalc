@@ -1,4 +1,4 @@
-#page-profile .page-header ~ .container {
+#page-profile .page-header~.container {
   display: flex;
 }
 

@@ -14,6 +14,6 @@ server.use(express.urlencoded({ extended: true }))
 server.use(routes)
 
 server.listen(3000, () => {
-  console.log('Server ligado')
-  console.log('Acessar: http://localhost:3000/')
+  console.log('Server connected')
+  console.log('Access: http://localhost:3000/')
 })

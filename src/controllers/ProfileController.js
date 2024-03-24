@@ -6,22 +6,22 @@ module.exports = {
   },
 
   async update(req, res) {
-    // req.body para pegar os dados
+    // req.body to get the data
     const data = req.body
 
-    // definir quantas semanas tem num ano: 52
+    // define how many weeks are in a year: 52
     const weeksPerYear = 52
 
-    // remover as semanas de férias do ano, para pegar quantas semanas tem em 1 mês
+    // remove the vacation weeks from the year, to get how many weeks there are in 1 month
     const weeksPerMonth = (weeksPerYear - data['vacation-per-year']) / 12
 
-    // total de horas trabalhadas na semana
+    // total hours worked in the week
     const weekTotalHours = data['hours-per-day'] * data['days-per-week']
 
-    // horas trabalhadas no mês
+    // hours worked in the month
     const monthlyTotalHours = weekTotalHours * weeksPerMonth
 
-    // qual será o valor da minha hora?
+    // What will my hourly rate be?
     const valueHour = data['monthly-budget'] / monthlyTotalHours
 
     const profile = await Profile.get()
