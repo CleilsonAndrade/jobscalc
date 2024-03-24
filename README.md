@@ -77,6 +77,15 @@ JobsCalc é uma aplicação de estimativa de cálculo para projetos freelancer, 
   # Clone este repositório:
   $ git clone https://github.com/CleilsonAndrade/jobscalc.git
   $ cd ./jobscalc
+
+  # Instalar as dependências
+  $ yarn install
+
+  # Iniciar banco de dados
+  $ yarn init-db
+
+  # Executar
+  $ yarn dev
 ```
 
 # 📝 <span id="licença">Licença</span>
